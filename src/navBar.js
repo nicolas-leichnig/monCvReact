@@ -14,18 +14,37 @@ import {
   MDBBtn,
   MDBView,
   MDBContainer,
-  MDBFormInline,
+  MDBTabContent,
   MDBAnimation,
-  MDBIcon
+  MDBIcon,
+  MDBTabPane,
+  MDBCardBody,
+  MDBCardTitle,
+  MDBCardText,MDBCard,MDBCardImage
 } from "mdbreact";
+import CardExample from "../src/flipCards";
 import "./index.css";
 
 
 class AppPage extends React.Component {
   state = {
-    collapsed: false
+    items: {
+        default: "1",
+        collapsed: false,
+    }
+    
   };
 
+  togglePills = (type, tab) => e => {
+    e.preventDefault();
+    if (this.state.items[type] !== tab) {
+      let items = { ...this.state.items };
+      items[type] = tab;
+      this.setState({
+        items
+      });
+    }
+  };
   handleTogglerClick = () => {
     this.setState({
       collapsed: !this.state.collapsed
@@ -60,13 +79,13 @@ class AppPage extends React.Component {
                 <MDBCollapse isOpen={this.state.collapsed} navbar>
                   <MDBNavbarNav left>
                     <MDBNavItem active>
-                      <MDBNavLink to="#!">Accueil</MDBNavLink>
+                      <MDBNavLink to="#!" active={this.state.items["default"] === "1"} onClick={this.togglePills("default", "1")}>Accueil</MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem>
-                      <MDBNavLink to="#!">Link</MDBNavLink>
+                      <MDBNavLink to="#!" active={this.state.items["default"] === "2"} onClick={this.togglePills("default", "2")}>Link</MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem>
-                      <MDBNavLink to="#!">Profile</MDBNavLink>
+                      <MDBNavLink to="#!" active={this.state.items["default"] === "3"} onClick={this.togglePills("default", "3")}>Profile</MDBNavLink>
                     </MDBNavItem>
                   </MDBNavbarNav>
                   <MDBNavbarNav right>
@@ -94,6 +113,8 @@ class AppPage extends React.Component {
         <MDBView>
           <MDBMask className="d-flex justify-content-center align-items-center gradient">
             <MDBContainer>
+            <MDBTabContent activeItem={this.state.items["default"]}>
+                <MDBTabPane tabId="1">
               <MDBRow>
                 <MDBCol
                   md="6"
@@ -124,6 +145,17 @@ class AppPage extends React.Component {
                   </MDBAnimation>
                 </MDBCol>
               </MDBRow>
+              </MDBTabPane>
+              <MDBTabPane tabId="2">
+                <h1>Je suis Manager avec 5 ans d’expérience dans le commerce. Tout juste diplômé d’un titre professionnel Développeur Web et Web mobile niveau 3 (Bac+ 2), 
+                    dans le cadre d’une réorientation de carrière,</h1>
+              </MDBTabPane>
+              
+              <MDBTabPane tabId="3">
+              <><CardExample/>
+              </>
+              </MDBTabPane>
+              </MDBTabContent>
             </MDBContainer>
           </MDBMask>
         </MDBView>
