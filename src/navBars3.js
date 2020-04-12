@@ -7,15 +7,15 @@ import {
   MDBRow,
   MDBCol,
   MDBIcon,
-  MDBBtn,
+  MDBTabPane,
   MDBView,
   MDBContainer,
   MDBCard, MDBCardBody, MDBCardText,
   MDBInput,
   MDBAnimation,
-  MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, 
+  MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBTabContent, 
 } from "mdbreact";
-
+import MultiCarouselPage from "../src/composent/flipCards";
 import "./navBar.css";
 
 
@@ -23,11 +23,27 @@ class ClassicFormPage extends React.Component {
   state = {
     collapseID: ""
   };
+  state = {
+    items: {
+        default: "1",
+    }
+}
 
   toggleCollapse = collapseID => () =>
     this.setState(prevState => ({
       collapseID: prevState.collapseID !== collapseID ? collapseID : ""
     }));
+
+    togglePills = (type, tab) => e => {
+      e.preventDefault();
+      if (this.state.items[type] !== tab) {
+        let items = { ...this.state.items };
+        items[type] = tab;
+        this.setState({
+          items
+        });
+      }
+    };
 
   render() {
 
@@ -50,7 +66,6 @@ class ClassicFormPage extends React.Component {
               <MDBContainer>
 
                 <MDBNavbarBrand>
-                  <img alt="Ma photo" id="pic" src={require("./image/comica1584616571639.jpg")} />
                   <strong id="haut" className="white-text">Curriculum Vitae</strong>
                 </MDBNavbarBrand>
 
@@ -63,11 +78,11 @@ class ClassicFormPage extends React.Component {
                   navbar
                 >
                 <MDBNavbarNav left>
-                  <MDBNavItem active>
-                    <MDBNavLink to="#!">Accueil</MDBNavLink>
+                  <MDBNavItem>
+                    <MDBNavLink to="#!" active={this.state.items["default"] === "1"} onClick={this.togglePills("default", "1")}>Accueil</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="#!">Compétences</MDBNavLink>
+                    <MDBNavLink to="#!" active={this.state.items["default"] === "2"} onClick={this.togglePills("default", "2")}>Compétences</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
                     <MDBNavLink to="#!">Expérience</MDBNavLink>
@@ -79,27 +94,9 @@ class ClassicFormPage extends React.Component {
 
                 <MDBNavbarNav right>
                   <MDBNavItem>
-                    <MDBNavLink className="waves-effect waves-light" to="#!">
-                      <MDBIcon fab icon="twitter" />
-                    </MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink className="waves-effect waves-light" to="#!">
-                      <MDBIcon fab icon="google-plus-g" />
-                    </MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBDropdown>
-                      <MDBDropdownToggle nav caret>
-                        <MDBIcon icon="user" />
-                      </MDBDropdownToggle>
-                      <MDBDropdownMenu className="dropdown-default">
-                        <MDBDropdownItem href="#!">Action</MDBDropdownItem>
-                        <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
-                        <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                        <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                      </MDBDropdownMenu>
-                    </MDBDropdown>
+                   <MDBNavbarBrand>
+                  <img alt="Ma photo" id="pic" src={require("./image/comica1584616571639.jpg")} />
+                  </MDBNavbarBrand>
                   </MDBNavItem>
                 </MDBNavbarNav>
 
@@ -116,6 +113,8 @@ class ClassicFormPage extends React.Component {
         <MDBView>
           <MDBMask className="d-flex justify-content-center align-items-center gradient">
             <MDBContainer>
+            <MDBTabContent activeItem={this.state.items["default"]}>
+              <MDBTabPane tabId="1">
               <MDBRow>
                 <MDBAnimation
                   type="fadeInLeft"
@@ -123,7 +122,7 @@ class ClassicFormPage extends React.Component {
                   className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5"
                 >
                   <h1 className="h1-responsive font-weight-bold">
-                  Développeuse Web Full Stack
+                  Développeur Web Full Stack
                   </h1>
                   <hr className="hr-light" />
                   <h6 className="mb-4">
@@ -181,25 +180,17 @@ class ClassicFormPage extends React.Component {
                   </MDBAnimation>
                 </MDBCol>
               </MDBRow>
+              </MDBTabPane>
+              <MDBTabPane tabId="2">
+              <><MultiCarouselPage/>
+              </>
+              </MDBTabPane>
+              </MDBTabContent>
             </MDBContainer>
           </MDBMask>
         </MDBView>
 
-        <MDBContainer>
-          <MDBRow className="py-5">
-            <MDBCol md="12" className="text-center">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
+        
       </div>
     );
   }

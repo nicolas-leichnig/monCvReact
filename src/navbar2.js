@@ -4,7 +4,7 @@ MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggle
 MDBDropdownToggle, MDBTabPane, MDBTabContent, MDBContainer,MDBCol,MDBIcon, MDBRow,MDBAnimation, MDBNav
 } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
-import CardExample from "../src/flipCards";
+import CardExample from "./composent/flipCards";
 import "./index.css"; 
 
 class NavbarPage extends Component {
