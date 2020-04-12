@@ -29,11 +29,12 @@ import "./index.css";
 class AppPage extends React.Component {
   state = {
     items: {
-        default: "1",
-        collapsed: false,
+        default: "1",  
     }
-    
   };
+  state = {
+    collapsed: false,
+  }
 
   togglePills = (type, tab) => e => {
     e.preventDefault();
@@ -62,6 +63,7 @@ class AppPage extends React.Component {
     return (
       <div id="apppage">
         <Router>
+          <header>
           <div>
             <MDBNavbar
               color="primary-color"
@@ -109,9 +111,9 @@ class AppPage extends React.Component {
             </MDBNavbar>
             {this.state.collapsed && overlay}
           </div>
+          </header>
         </Router>
-        <MDBView>
-          <MDBMask className="d-flex justify-content-center align-items-center gradient">
+        
             <MDBContainer>
             <MDBTabContent activeItem={this.state.items["default"]}>
                 <MDBTabPane tabId="1">
@@ -157,8 +159,7 @@ class AppPage extends React.Component {
               </MDBTabPane>
               </MDBTabContent>
             </MDBContainer>
-          </MDBMask>
-        </MDBView>
+          
       </div>
     );
   }
