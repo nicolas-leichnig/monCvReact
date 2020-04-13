@@ -1,9 +1,11 @@
 import React, { Component } from "react";
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFlippingCard,
   MDBRow, MDBTabPane, MDBTabContent, MDBIcon,MDBAnimation,MDBCard,MDBCardBody,MDBCardText,MDBCol } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
 import MultiCarouselPage from "../src/composent/flipCards";
-import "./index.css"
+import TimelinePage from "../src/composent/timeLine";
+import CardExample from "../src/composent/cards";
+import "./index.css";
 
 class NavbarPage extends Component {
   state = {
@@ -59,27 +61,27 @@ render() {
       <header>
       <MDBNavbar color="unique-color" dark expand="md">
         <MDBNavbarBrand>
-          <strong className="white-text">Curriculum Vitae</strong>
+          <strong className="white-text"><h2 className="font-weight-bold">Curriculum Vitae</h2></strong>
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav left>
-          <MDBNavItem active>
+          <MDBNavItem  active>
                     <MDBNavLink to="#!" active={this.state.items["default"] === "1"} onClick={this.togglePills("default", "1")}>
-                      <MDBIcon className="d-none d-md-inline" icon='home' size='3' />
+                      <MDBIcon className="d-none d-md-inline" icon='home' size='5' />
                     </MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="#!" active={this.state.items["default"] === "2"} onClick={this.togglePills("default", "2")}>Compétences</MDBNavLink>
+                    <MDBNavLink to="#!" active={this.state.items["default"] === "2"} onClick={this.togglePills("default", "2")}><h3 className="font-weight-bold">Compétences</h3></MDBNavLink>
                   </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="#!">Expériences</MDBNavLink>
+              <MDBNavLink to="#!" active={this.state.items["default"] === "3"} onClick={this.togglePills("default", "3")}><h3 className="font-weight-bold">Expériences</h3></MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="#!">Formation</MDBNavLink>
+              <MDBNavLink to="#!" active={this.state.items["default"] === "4"} onClick={this.togglePills("default", "4")}><h3 className="font-weight-bold">Formation</h3></MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="#!">Moi</MDBNavLink>
+              <MDBNavLink to="#!" active={this.state.items["default"] === "5"} onClick={this.togglePills("default", "5")}><h3 className="font-weight-bold">Moi</h3></MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
@@ -106,7 +108,7 @@ render() {
         Développeur Web Full Stack
         </h1>
         <hr className="hr-light" />
-        <h6 className="mb-4" >
+        <h6 className="mb-4 text-justify" >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Rem repellendus quasi fuga nesciunt dolorum nulla magnam
           veniam sapiente, fugiat! Commodi sequi non animi ea dolor
@@ -124,7 +126,7 @@ render() {
               </h3>
               <hr className="hr-light" />
 
-              <MDBCardText className="black-text">
+              <MDBCardText className="black-text text-justify">
               Sed ut perspiciatis unde omnis iste natus sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam.{' '}
               </MDBCardText>
@@ -161,11 +163,24 @@ render() {
       </MDBCol>
     </MDBRow>
     </MDBTabPane>
-    
-              <MDBTabPane tabId="2">
+
+    <MDBTabPane tabId="2">
+      <>
+        <CardExample/>
+      </>
+    </MDBTabPane>
+
+    <MDBTabPane tabId="3">
+      <>
+        <TimelinePage/>
+      </>
+    </MDBTabPane>
+
+              <MDBTabPane tabId="5">
               <><MultiCarouselPage/>
               </>
               </MDBTabPane>
+
     </MDBTabContent>
     </>
     
