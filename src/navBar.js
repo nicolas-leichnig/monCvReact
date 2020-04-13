@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import MultiCarouselPage from "../src/composent/flipCards";
 import TimelinePage from "../src/composent/timeLine";
 import CardExample from "../src/composent/cards";
+import Contact from "../src/composent/Contact";
 import "./index.css";
 
 class NavbarPage extends Component {
@@ -36,7 +37,7 @@ togglePills = (type, tab) => e => {
 render() {
   return (
     <>
-
+    <div className="container-area">
     <div className="area">
           <ul className="circles">
             <li></li>
@@ -56,7 +57,7 @@ render() {
             <li></li>
           </ul>
         </div>
-
+    </div>
     <Router>
       <header>
       <MDBNavbar color="unique-color" dark expand="md">
@@ -66,30 +67,27 @@ render() {
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav left>
-          <MDBNavItem  active>
-                    <MDBNavLink to="#!" active={this.state.items["default"] === "1"} onClick={this.togglePills("default", "1")}>
-                      <MDBIcon className="d-none d-md-inline" icon='home' size='5' />
-                    </MDBNavLink>
-                  </MDBNavItem>
+          
                   <MDBNavItem>
-                    <MDBNavLink to="#!" active={this.state.items["default"] === "2"} onClick={this.togglePills("default", "2")}><h3 className="font-weight-bold">Compétences</h3></MDBNavLink>
+                    <MDBNavLink to="#!" active={this.state.items["default"] === "2"} onClick={this.togglePills("default", "2")}><h4 className=""><MDBIcon icon="check"/> Compétences</h4></MDBNavLink>
                   </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="#!" active={this.state.items["default"] === "3"} onClick={this.togglePills("default", "3")}><h3 className="font-weight-bold">Expériences</h3></MDBNavLink>
+              <MDBNavLink to="#!" active={this.state.items["default"] === "3"} onClick={this.togglePills("default", "3")}><h4 className=""><MDBIcon icon="briefcase"/> Expériences</h4></MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="#!" active={this.state.items["default"] === "4"} onClick={this.togglePills("default", "4")}><h3 className="font-weight-bold">Formation</h3></MDBNavLink>
+              <MDBNavLink to="#!" active={this.state.items["default"] === "4"} onClick={this.togglePills("default", "4")}><h4 className=""><MDBIcon icon="book"/> Formation</h4></MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="#!" active={this.state.items["default"] === "5"} onClick={this.togglePills("default", "5")}><h3 className="font-weight-bold">Moi</h3></MDBNavLink>
+              <MDBNavLink to="#!" active={this.state.items["default"] === "5"} onClick={this.togglePills("default", "5")}><h4><MDBIcon icon="male"/> Moi</h4></MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
-            <MDBNavItem>
-            <MDBNavbarBrand>
-                  <img alt="Ma photo" id="pic" src={require("./image/comica1584616571639.jpg")} />
-                  </MDBNavbarBrand>
-            </MDBNavItem>
+          <MDBNavItem  active>
+                    <MDBNavLink to="#!" active={this.state.items["default"] === "1"} onClick={this.togglePills("default", "1")}>
+                      <MDBIcon className="d-none d-md-inline" icon='home' size='2x' />
+                    </MDBNavLink>
+                  </MDBNavItem>
+            
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>
@@ -98,70 +96,9 @@ render() {
     
     <MDBTabContent id="fd" activeItem={this.state.items["default"]}>
     <MDBTabPane tabId="1">
-    <MDBRow>
-      <MDBAnimation
-        type="fadeInLeft"
-        delay=".3s"
-        className="black-text text-center text-md-left col-md-6 mt-xl-5 mb-5"
-      >
-        <h1 className="h1-responsive font-weight-bold">
-        Développeur Web Full Stack
-        </h1>
-        <hr className="hr-light" />
-        <h6 className="mb-4 text-justify" >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Rem repellendus quasi fuga nesciunt dolorum nulla magnam
-          veniam sapiente, fugiat! Commodi sequi non animi ea dolor
-          molestiae, quisquam iste, maiores. Nulla.
-        </h6>
-      </MDBAnimation>
-
-      <MDBCol md="6" xl="5" className="mb-4">
-        <MDBAnimation type="fadeInRight" delay=".3s">
-          <MDBCard id="classic-card">
-            <MDBCardBody className="black-text">
-
-              <h3 className="text-center">
-                <MDBIcon icon="user" /> Nicolas Leichnig
-              </h3>
-              <hr className="hr-light" />
-
-              <MDBCardText className="black-text text-justify">
-              Sed ut perspiciatis unde omnis iste natus sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.{' '}
-              </MDBCardText>
-
-              <div className="text-center mt-4 black-text">
-                <hr className="hr-light" />
-                <div className="text-center d-flex justify-content-center black-label">
-                  <a href="https://www.linkedin.com/in/nicolas-leichnig-163952158/" className="p-2 m-2">
-                    <MDBIcon
-                      fab
-                      icon="linkedin"
-                      className="black-text"
-                    />
-                  </a>
-                  <a href="https://github.com/nicolas-leichnig/" className="p-2 m-2">
-                    <MDBIcon
-                      fab
-                      icon="github"
-                      className="black-text"
-                    />
-                  </a>
-                  <a href="https://www.facebook.com/psykolas" className="p-2 m-2">
-                    <MDBIcon
-                      fab
-                      icon="facebook"
-                      className="black-text"
-                    />
-                  </a>
-                </div>
-              </div>
-            </MDBCardBody>
-          </MDBCard>
-        </MDBAnimation>
-      </MDBCol>
-    </MDBRow>
+    <>
+    <Contact/>
+    </>
     </MDBTabPane>
 
     <MDBTabPane tabId="2">

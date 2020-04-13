@@ -55,14 +55,10 @@
     -webkit-border-radius:50px;
     -moz-border-radius:50px;
     border-radius:50px;
-    width:90px;
-    height:90px;
+    
   }
   
-  #pic:hover {
-    -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-  }
+  
   
   #haut{
     padding-left: 25px;
