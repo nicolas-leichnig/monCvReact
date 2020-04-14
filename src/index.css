@@ -1,3 +1,79 @@
+#fd .gradient {
+    background: -moz-linear-gradient(
+      45deg,
+      rgba(42, 27, 161, 0.7),
+      rgba(29, 210, 177, 0.7) 100%
+    );
+    background: -webkit-linear-gradient(
+      45deg,
+      rgba(42, 27, 161, 0.7),
+      rgba(29, 210, 177, 0.7) 100%
+    );
+    background: -webkit-gradient(
+      linear,
+      45deg,
+      from(rgba(42, 27, 161, 0.7)),
+      to(rgba(29, 210, 177, 0.7))
+    );
+    background: -o-linear-gradient(
+      45deg,
+      rgba(42, 27, 161, 0.7),
+      rgba(29, 210, 177, 0.7) 100%
+    );
+    background: linear-gradient(
+      45deg,
+      rgba(42, 27, 161, 0.7),
+      rgba(29, 210, 177, 0.7) 100%
+    );
+  }
+  
+  #fs {
+    background-image: url("../src/image/grand-canyon-4967730_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+  }
+  
+  #fd h6 {
+    line-height: 1.7;
+  }
+  
+  #moi {
+      height: 400px;
+      border-radius: 2rem;
+  }
+  
+  @media only screen and (max-width: 400px) {
+    #fd .animated img {
+      max-height: 50vh;
+      transform: translateX(-50%);
+      left: 50%;
+      position: absolute;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    #fd .animated img {
+      max-height: 35vh;
+      transform: translateX(-50%);
+      left: 50%;
+    }
+  }
+  
+  @media (max-width: 767px) and (orientation: landscape) {
+    #fd .animated img {
+      max-height: 50vh;
+      transform: translateX(-50%);
+      left: 50%;
+      position: relative;
+    }
+  }
+  @media (max-width: 1000px) and (orientation: landscape) {
+    #fd {
+      min-height: 150vh;
+    }
+  }
+​
 /* animated background  */
 .container-area{
   overflow: hidden;
@@ -112,14 +188,12 @@
   animation-delay: 0s;
   animation-duration: 11s;
 }
-​
 @keyframes animate {
   0% {
     transform: translateY(-1000px) rotate(0deg);
     opacity: 0.5;
     border-radius: 0;
   }
-​
   100% {
     transform: translateY(0) rotate(720deg);
     opacity: 0;
