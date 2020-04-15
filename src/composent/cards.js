@@ -1,12 +1,15 @@
 import React from 'react';
-import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBRow, MDBCol, MDBIcon } from
+import { MDBBtn, MDBCard, MDBAnimation, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBRow, MDBCol, MDBIcon } from
 'mdbreact';
+import "../index.css"
 
 const CardExample = () => {
   return (
     <MDBRow>
-      <MDBCol md="4">
-        <MDBCard cascade>
+      <MDBCol md="6" xl="5" className="mb-4">
+        <MDBAnimation type="fadeInRight" delay=".3s">
+      
+        <MDBCard  cascade>
           <MDBCardImage
             cascade
             className='img-fluid'
@@ -55,6 +58,8 @@ const CardExample = () => {
             </ul>
           </div>
         </MDBCard>
+        
+        </MDBAnimation>
       </MDBCol>
     </MDBRow>
   )

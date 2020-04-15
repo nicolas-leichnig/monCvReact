@@ -1,12 +1,42 @@
 import React from 'react';
-import { MDBCard, MDBCardBody, MDBCardUp, MDBAvatar, MDBRow, MDBCol, MDBIcon } from 'mdbreact';
+import { MDBCard,MDBMask, MDBContainer, MDBCardBody, MDBCardUp, MDBAvatar, MDBRow, MDBCol, MDBIcon, MDBAnimation } from 'mdbreact';
+import "../index.css"
 
 const Contact = () => {
   return (
+    <MDBMask className="d-flex justify-content-center align-items-center gradient">
+      <MDBContainer>
     <MDBRow>
-      <MDBCol md='4'>
+      <MDBAnimation
+                  type="fadeInLeft"
+                  delay=".7s"
+                  className="black-text text-center text-md-left col-md-6 mt-xl-5 mb-5"
+                >
+                  <h1 className="h1-responsive font-weight-bold">
+                  Développeur Web Full Stack
+                  </h1>
+                  <hr className="hr-dark" />
+                  <h5 className="mb-4 text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Rem repellendus quasi fuga nesciunt dolorum nulla magnam
+                    veniam sapiente, fugiat! Commodi sequi non animi ea dolor
+                    molestiae, quisquam iste, maiores. Nulla.
+                  </h5>
+                  <hr className="hr-dark" />
+                  <MDBContainer className="mt-4">
+        <MDBRow>
+          <MDBCol className="mb-10">
+            <img src={require("../image/efd.png")} className="img-fluid z-depth-1" alt="compétence" id="img" />
+          </MDBCol>
+        </MDBRow>
+      </MDBContainer>
+                </MDBAnimation>
+                <MDBCol></MDBCol>
+
+         <MDBCol md="5" xl="5" className="mb-4">
+        <MDBAnimation type="fadeInRight" delay=".7s">
         <MDBCard testimonial>
-          <MDBCardUp className='indigo lighten-1 '  />
+          <MDBCardUp className='indigo darken-4' id="haut" />
           <MDBAvatar className='mx-auto white'>
           <img alt="Ma photo" id="pic" src={require("../image/comica1584616571639.jpg")}/>
           </MDBAvatar>
@@ -61,9 +91,11 @@ const Contact = () => {
                         </div>
           </MDBCardBody>
         </MDBCard>
+        </MDBAnimation>
       </MDBCol>
-      
     </MDBRow>
+    </MDBContainer>
+    </MDBMask>
   )
 }
 

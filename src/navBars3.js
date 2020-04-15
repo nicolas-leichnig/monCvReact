@@ -119,7 +119,7 @@ class ClassicFormPage extends React.Component {
                 <MDBAnimation
                   type="fadeInLeft"
                   delay=".3s"
-                  className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5"
+                  className="black-text text-center text-md-left col-md-6 mt-xl-5 mb-5"
                 >
                   <h1 className="h1-responsive font-weight-bold">
                   Développeur Web Full Stack
@@ -143,7 +143,7 @@ class ClassicFormPage extends React.Component {
                         </h3>
                         <hr className="hr-light" />
 
-                        <MDBCardText className="white-text">
+                        <MDBCardText className="black-text">
                         Sed ut perspiciatis unde omnis iste natus sit voluptatem
                         accusantium doloremque laudantium, totam rem aperiam.{' '}
                         </MDBCardText>

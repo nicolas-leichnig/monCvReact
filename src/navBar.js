@@ -60,7 +60,7 @@ render() {
     </div>
     <Router>
       <header>
-      <MDBNavbar color="unique-color" dark expand="md">
+      <MDBNavbar color="indigo darken-4" dark expand="md">
         <MDBNavbarBrand>
           <strong className="white-text"><h2 className="font-weight-bold">Curriculum Vitae</h2></strong>
         </MDBNavbarBrand>
