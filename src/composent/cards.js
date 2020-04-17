@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBBtn,MDBProgress, MDBCard, MDBAnimation, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBRow, MDBCol, MDBIcon } from
+import { MDBBtn,MDBProgress, MDBCard, MDBAnimation, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBRow, MDBCol, MDBIcon, MDBContainer } from
 'mdbreact';
 import "../index.css"
 
@@ -7,6 +7,8 @@ const CardExample = () => {
   return (
     /*fist row*/
     <>
+    <MDBContainer><h1 className="text-center font-weight-bold ">Les technologie front-end.</h1></MDBContainer>
+    <hr/>
     <MDBRow className="mb-n4">
       <MDBCol md="3" xl="3" className="mb-4">
         <MDBAnimation type="flipInX" delay=".2s">

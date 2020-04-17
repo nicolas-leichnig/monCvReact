@@ -4,6 +4,9 @@ MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn } from "mdbreact";
 
 const MultiCarouselPage = () => {
   return (
+    <>
+    <MDBContainer><h1 className="text-center font-weight-bold ">Globe-trotteur!?</h1></MDBContainer>
+    <hr/>
     <MDBContainer>
       <MDBCarousel activeItem={1} length={3} slide={true} showControls={false} showIndicators={true} multiItem>
         <MDBCarouselInner>
@@ -135,6 +138,7 @@ const MultiCarouselPage = () => {
         </MDBCarouselInner>
       </MDBCarousel>
     </MDBContainer>
+    </>
   );
 }
 

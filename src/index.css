@@ -12,6 +12,11 @@ height: 85px;
   margin: auto;
 }
 
+/* Time Line*/
+#timeLine {
+  margin: auto;
+}
+
 /*backGround animation*/
 .container-area{
     overflow: hidden;

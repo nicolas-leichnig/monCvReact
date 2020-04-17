@@ -1,10 +1,13 @@
 import React from "react";
-import { MDBTimeline, MDBTimelineStep, MDBIcon } from "mdbreact";
+import { MDBTimeline, MDBTimelineStep, MDBIcon, MDBCol } from "mdbreact";
 
 const TimelinePage = () => {
   return (
+
+    <>
+    <MDBCol md="10" id="timeLine">
     <MDBTimeline>
-      <MDBTimelineStep colorful hoverable color="cyan" label="1">
+      <MDBTimelineStep colorful hoverable color="cyan" label="2004">
         <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(135).jpg" className="img-fluid" alt="" />
         <h4 className="font-weight-bold p-4 mb-0">
           Ut enim ad minim veniam
@@ -91,6 +94,8 @@ const TimelinePage = () => {
         </p>
       </MDBTimelineStep>
     </MDBTimeline>
+  </MDBCol>
+  </>
   );
 };
 
