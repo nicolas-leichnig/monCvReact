@@ -1,30 +1,23 @@
 import React from 'react';
-import { MDBBtn, MDBCard, MDBAnimation, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBRow, MDBCol, MDBIcon } from
+import { MDBBtn,MDBProgress, MDBCard, MDBAnimation, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBRow, MDBCol, MDBIcon } from
 'mdbreact';
 import "../index.css"
 
 const CardExample = () => {
   return (
-    <MDBRow>
-      <MDBCol md="6" xl="5" className="mb-4">
-        <MDBAnimation type="fadeInRight" delay=".3s">
+    /*fist row*/
+    <>
+    <MDBRow className="mb-n4">
+      <MDBCol md="3" xl="3" className="mb-4">
+        <MDBAnimation type="flipInX" delay=".2s">
       
-        <MDBCard  cascade>
-          <MDBCardImage
+        <MDBCard  cascade id="cardEx">
+          <MDBCardImage id="imgCard"
             cascade
             className='img-fluid'
-            overlay="white-light"
-            hover
-            src='https://mdbootstrap.com/img/Photos/Others/food.jpg'
+            src={require('../image/html5-logo-png-6.png')}
           />
-          <MDBBtn
-            floating
-            tag='a'
-            className='ml-auto mr-4 lighten-3 mdb-coalor'
-            action
-          >
-            <MDBIcon icon='chevron-right' className="mdb-color lighten-3"/>
-          </MDBBtn>
+          
           <MDBCardBody cascade>
             <MDBCardTitle>Card title</MDBCardTitle>
             <hr/>
@@ -33,35 +26,203 @@ const CardExample = () => {
               bulk of the card's content.
             </MDBCardText>
           </MDBCardBody>
-          <div className='rounded-bottom mdb-color lighten-3 text-center pt-3'>
-            <ul className='list-unstyled list-inline font-small'>
-              <li className='list-inline-item pr-2 white-text'>
-                <MDBIcon far icon='clock' /> 05/10/2015
-              </li>
-              <li className='list-inline-item pr-2'>
-                <a href='#!' className='white-text'>
-                  <MDBIcon far icon='comments' className='mr-1' />
-                  12
-                </a>
-              </li>
-              <li className='list-inline-item pr-2'>
-                <a href='#!' className='white-text'>
-                  <MDBIcon fab icon='facebook-f' className='mr-1' />
-                  21
-                </a>
-              </li>
-              <li className='list-inline-item'>
-                <a href='#!' className='white-text'>
-                  <MDBIcon fab icon='twitter' className='mr-1' />5
-                </a>
-              </li>
-            </ul>
+          <div className='pt-2'>
+          <MDBProgress material value={50} animated height="30px" color="warning" className="text-center"> 50 % </MDBProgress>
           </div>
         </MDBCard>
         
         </MDBAnimation>
       </MDBCol>
+      <MDBCol md="3" xl="3" className="mb-4">
+        <MDBAnimation type="flipInX" delay=".4s">
+      
+        <MDBCard  cascade id="cardEx">
+          <MDBCardImage id="imgCard"
+            cascade
+            className='img-fluid'
+            src={require('../image/css.png')}
+          />
+          
+          <MDBCardBody cascade>
+            <MDBCardTitle>Card title</MDBCardTitle>
+            <hr/>
+            <MDBCardText>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </MDBCardText>
+          </MDBCardBody>
+          <div className='pt-2'>
+          <MDBProgress material value={50} animated height="30px" color="warning" className="text-center"> 50 % </MDBProgress>
+          </div>
+        </MDBCard>
+        
+        </MDBAnimation>
+      </MDBCol>
+
+      
+      
+      <MDBCol md="3" xl="3" className="mb-4">
+        <MDBAnimation type="flipInX" delay=".6s">
+      
+        <MDBCard  cascade id="cardEx">
+          <MDBCardImage id="imgCard"
+            cascade
+            className='img-fluid'
+            src={require('../image/javascript (1).png')}
+          />
+          
+          <MDBCardBody cascade>
+            <MDBCardTitle>Card title</MDBCardTitle>
+            <hr/>
+            <MDBCardText>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </MDBCardText>
+          </MDBCardBody>
+          <div className='pt-2'>
+          <MDBProgress material value={50} animated height="30px" color="warning" className="text-center"> 50 % </MDBProgress>
+          </div>
+        </MDBCard>
+        
+        </MDBAnimation>
+      </MDBCol>
+
+      <MDBCol md="3" xl="3" className="mb-4">
+        <MDBAnimation type="flipInX" delay=".8s">
+      
+        <MDBCard  cascade id="cardEx">
+          <MDBCardImage id="imgCard"
+            cascade
+            className='img-fluid'
+            src={require('../image/mdb-transparent-big.png')}
+          />
+          <MDBCardBody cascade>
+            <MDBCardTitle>Card title</MDBCardTitle>
+            <hr/>
+            <MDBCardText>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </MDBCardText>
+          </MDBCardBody>
+          <div className='pt-2'>
+          <MDBProgress material value={50} animated height="30px" color="warning" className="text-center"> 50 % </MDBProgress>
+          </div>
+        </MDBCard>
+        
+        </MDBAnimation>
+      </MDBCol> 
     </MDBRow>
+
+    <><MDBRow className="mb-4"></MDBRow></>
+    
+
+    <MDBRow className="mb-n4">
+      <MDBCol md="3" xl="3" className="mb-4">
+        <MDBAnimation type="flipInX" delay=".2s">
+      
+        <MDBCard  cascade id="cardEx">
+          <MDBCardImage id="imgCard"
+            cascade
+            className='img-fluid'
+            src={require('../image/regv.png')}
+          />
+          
+          <MDBCardBody cascade>
+            <MDBCardTitle>Card title</MDBCardTitle>
+            <hr/>
+            <MDBCardText>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </MDBCardText>
+          </MDBCardBody>
+          <div className='pt-2'>
+          <MDBProgress material value={50} animated height="30px" color="warning" className="text-center"> 50 % </MDBProgress>
+          </div>
+        </MDBCard>
+        
+        </MDBAnimation>
+      </MDBCol>
+      <MDBCol md="3" xl="3" className="mb-4">
+        <MDBAnimation type="flipInX" delay=".4s">
+      
+        <MDBCard  cascade id="cardEx">
+          <MDBCardImage id="imgCard"
+            cascade
+            className='img-fluid'
+            src={require('../image/html5-logo-png-6.png')}
+          />
+        
+          <MDBCardBody cascade>
+            <MDBCardTitle>Card title</MDBCardTitle>
+            <hr/>
+            <MDBCardText>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </MDBCardText>
+          </MDBCardBody>
+          <div className='pt-2'>
+          <MDBProgress material value={50} animated height="30px" color="warning" className="text-center"> 50 % </MDBProgress>
+          </div>
+        </MDBCard>
+        
+        </MDBAnimation>
+      </MDBCol>
+
+      
+      
+      <MDBCol md="3" xl="3" className="mb-4">
+        <MDBAnimation type="flipInX" delay=".6s">
+      
+        <MDBCard  cascade id="cardEx">
+          <MDBCardImage id="imgCard"
+            cascade
+            className='img-fluid'
+            src={require('../image/html5-logo-png-6.png')}
+          />
+          
+          <MDBCardBody cascade>
+            <MDBCardTitle>Card title</MDBCardTitle>
+            <hr/>
+            <MDBCardText>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </MDBCardText>
+          </MDBCardBody>
+          <div className='pt-2'>
+          <MDBProgress material value={50} animated height="30px" color="warning" className="text-center"> 50 % </MDBProgress>
+          </div>
+        </MDBCard>
+        
+        </MDBAnimation>
+      </MDBCol>
+
+      <MDBCol md="3" xl="3" className="mb-4">
+        <MDBAnimation type="flipInX" delay=".8s">
+      
+        <MDBCard  cascade id="cardEx">
+          <MDBCardImage id="imgCard"
+            cascade
+            className='img-fluid'
+            src={require('../image/html5-logo-png-6.png')}
+          />
+
+          <MDBCardBody cascade>
+            <MDBCardTitle>Card title</MDBCardTitle>
+            <hr/>
+            <MDBCardText>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </MDBCardText>
+          </MDBCardBody>
+          <div className='pt-2'>
+          <MDBProgress material value={50} animated height="30px" color="warning" className="text-center"> 50 % </MDBProgress>
+          </div>
+        </MDBCard>
+        
+        </MDBAnimation>
+      </MDBCol> 
+    </MDBRow>
+    </>
   )
 }
 

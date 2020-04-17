@@ -25,7 +25,7 @@ const Contact = () => {
                   <hr className="hr-dark" />
                   <MDBContainer className="mt-4">
         <MDBRow>
-          <MDBCol className="mb-10">
+          <MDBCol className="mb-10 text-center">
             <img src={require("../image/efd.png")} className="img-fluid z-depth-1" alt="compétence" id="img" />
           </MDBCol>
         </MDBRow>

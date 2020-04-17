@@ -5,6 +5,14 @@ height: 85px;
   height: 313px;
   border-radius: 2%;
 }
+
+/*Cards Expériences*/
+#imgCard {
+  height: 250px;
+  margin: auto;
+}
+
+/*backGround animation*/
 .container-area{
     overflow: hidden;
     position: fixed;
