@@ -9,6 +9,7 @@ const CardExample = () => {
     <>
     <MDBContainer><h1 className="text-center font-weight-bold ">Les technologie front-end.</h1></MDBContainer>
     <hr/>
+    <MDBContainer md="10">
     <MDBRow className="mb-n4">
       <MDBCol md="3" xl="3" className="mb-4">
         <MDBAnimation type="flipInX" delay=".2s">
@@ -224,6 +225,7 @@ const CardExample = () => {
         </MDBAnimation>
       </MDBCol> 
     </MDBRow>
+    </MDBContainer>
     </>
   )
 }

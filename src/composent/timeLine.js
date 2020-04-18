@@ -1,10 +1,13 @@
 import React from "react";
-import { MDBTimeline, MDBTimelineStep, MDBIcon, MDBCol } from "mdbreact";
+import { MDBTimeline,MDBContainer, MDBTimelineStep, MDBIcon, MDBCol } from "mdbreact";
 
 const TimelinePage = () => {
   return (
 
     <>
+    
+    <MDBContainer><h1 className="text-center font-weight-bold ">Mes différentes expériences.</h1></MDBContainer>
+    <hr/>
     <MDBCol md="10" id="timeLine">
     <MDBTimeline>
       <MDBTimelineStep colorful hoverable color="cyan" label="2004">

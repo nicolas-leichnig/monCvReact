@@ -6,6 +6,7 @@ import MultiCarouselPage from "../src/composent/flipCards";
 import TimelinePage from "../src/composent/timeLine";
 import CardExample from "../src/composent/cards";
 import Contact from "../src/composent/Contact";
+import Formation from "../src/composent/formation";
 import "./index.css";
 
 class NavbarPage extends Component {
@@ -110,6 +111,12 @@ render() {
     <MDBTabPane tabId="3">
       <>
         <TimelinePage/>
+      </>
+    </MDBTabPane>
+
+    <MDBTabPane tabId="4">
+      <>
+        <Formation/>
       </>
     </MDBTabPane>
 

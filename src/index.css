@@ -8,9 +8,33 @@ height: 85px;
 
 /*Cards Expériences*/
 #imgCard {
-  height: 250px;
+  height: 200px;
   margin: auto;
 }
+
+/* Formation */
+#form {
+  margin-top: 75px;
+}
+#formImg1 {
+  background-image: url("../src/image/code-1076536_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#formImg2 {
+  background-image: url("../src/image/header_30_ans_mobile_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#formImg3 {
+  background-image: url("../src/image/calculator-385506_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 
 /* Time Line*/
 #timeLine {
