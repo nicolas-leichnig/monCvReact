@@ -35,6 +35,14 @@ height: 85px;
   background-position: center center;
 }
 
+#cardform {
+  height: 375px;
+}
+
+#button {
+  margin-bottom: 5px;
+}
+
 
 /* Time Line*/
 #timeLine {

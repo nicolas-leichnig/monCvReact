@@ -10,10 +10,10 @@ const Formation = () => {
     <MDBRow>
       <MDBCol md='4'>
         <MDBCard
-          className='card-image'
+          className='card-image' height="400px"
          id="formImg1"
         >
-          <div className='text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4'>
+          <div id="cardform" className='text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4'>
             <div>
               <h5 className='blue-text'>
                 <MDBIcon icon='laptop' /> Titre professionnel (RNCP)
@@ -39,7 +39,7 @@ const Formation = () => {
           className='card-image'
           id="formImg2"
         >
-          <div className='text-white text-center d-flex align-items-center rgba-indigo-strong py-5 px-4'>
+          <div id="cardform" className='text-white text-center d-flex align-items-center rgba-indigo-strong py-5 px-4'>
             <div>
               <h5 className='orange-text'>
                 <MDBIcon icon='tram' /> C.Q.P
@@ -65,7 +65,7 @@ const Formation = () => {
           className='card-image'
           id="formImg3"
         >
-          <div className='text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4'>
+          <div id="cardform" className='text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4'>
             <div>
               <h5 className='green-text'>
                 <MDBIcon icon='journal-whills' /> Baccalauréat C.G

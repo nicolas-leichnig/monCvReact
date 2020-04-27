@@ -5,7 +5,7 @@ MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn } from "mdbreact";
 const MultiCarouselPage = () => {
   return (
     <>
-    <MDBContainer><h1 className="text-center font-weight-bold ">Globe-trotteur!?</h1></MDBContainer>
+    <MDBContainer><h1 className="text-center font-weight-bold ">Globe-trotteur !?</h1></MDBContainer>
     <hr/>
     <MDBContainer>
       <MDBCarousel activeItem={1} length={3} slide={true} showControls={false} showIndicators={true} multiItem>
@@ -14,40 +14,41 @@ const MultiCarouselPage = () => {
             <MDBCarouselItem itemId="1">
               <MDBCol md="4">
                 <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg" />
+                  <MDBCardImage className="img-fluid" src={require('../image/voyage/colosseum-2030643_1920.jpg')} />
                   <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
+                    <MDBCardTitle>Rome (Italie)</MDBCardTitle>
                     <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                      Rome est une ville gastronomique, où l'on trouve des monuments 
+                      antiques (Colisée, Panthéon) de toute beauté.
+                      
                     </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
+                    <MDBBtn color="primary">En savoir plus</MDBBtn>
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
               <MDBCol md="4">
                 <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" />
+                  <MDBCardImage className="img-fluid" src={require('../image/voyage/tunisia-2425441_1920.jpg')} />
                   <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    <MDBCardTitle>Djerba (Tunisie)</MDBCardTitle>
+                    <MDBCardText className="text-justify">
+                      Toujous baigné de soleil, Djerba possède des plages superbes
+                      avec une eau d'un bleu turquoise.
                     </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
+                    <MDBBtn color="primary">En savoir plus</MDBBtn>
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
               <MDBCol md="4">
                 <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" />
+                  <MDBCardImage className="img-fluid" src={require('../image/voyage/spain-1276209_1920.jpg')} />
                   <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    <MDBCardTitle>Barcelone (Espagne)</MDBCardTitle>
+                    <MDBCardText className="text-justify">
+                      Barcelone posséde un club de foot mythique avec un stage de plus de 80 000 places,
+                      et sa gastromie vont vous réveillez les papilles.
                     </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
+                    <MDBBtn color="primary">En savoir plus</MDBBtn>
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
@@ -55,40 +56,40 @@ const MultiCarouselPage = () => {
             <MDBCarouselItem itemId="2">
               <MDBCol md="4">
                 <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(60).jpg" />
+                  <MDBCardImage className="img-fluid" src={require('../image/voyage/reunion-island-4036390_1280.jpg')} />
                   <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    <MDBCardTitle>L'île de la Réunion</MDBCardTitle>
+                    <MDBCardText className="text-justify">
+                      La Réunion est magique t'en par ça divesité de paysage
+                      que de culture et possède un climat de rêve.
                     </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
+                    <MDBBtn color="primary">En savoir plus</MDBBtn>
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
               <MDBCol md="4">
                 <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(47).jpg" />
+                  <MDBCardImage className="img-fluid" src={require('../image/voyage/beach-2084350_1920.jpg')} />
                   <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    <MDBCardTitle>Phuket (Thaïlande)</MDBCardTitle>
+                    <MDBCardText className="text-justify">
+                      Ville touristique qui sais laisser la place au tradition,
+                      un combat de muay thai et un plat épicé, il n'y a rien de plus local.
                     </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
+                    <MDBBtn color="primary">En savoir plus</MDBBtn>
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
               <MDBCol md="4">
                 <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(48).jpg" />
+                  <MDBCardImage className="img-fluid" src={require('../image/voyage/hollywood-1245960_1920.jpg')} />
                   <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    <MDBCardTitle>Los Angeles (Etat-Unis)</MDBCardTitle>
+                    <MDBCardText className="text-justify">
+                      Holliwood, Santa Monica, Malibu autant de lieux mithyque à visité dans cette 
+                      ville imence qui ne dort jamais.
                     </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
+                    <MDBBtn color="primary">En savoir plus</MDBBtn>
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
@@ -96,44 +97,43 @@ const MultiCarouselPage = () => {
             <MDBCarouselItem itemId="3">
               <MDBCol md="4">
                 <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg" />
+                  <MDBCardImage className="img-fluid" src={require('../image/voyage/las-vegas-864881_1920.jpg')} />
                   <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    <MDBCardTitle>Las Vegas (Etat-Unis)</MDBCardTitle>
+                    <MDBCardText className="text-justify">
+                      La fête et le jeux sont les deux maîtres mots de cette ville hors norme situé en plein desert du Névada.
                     </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
+                    <MDBBtn color="primary">En savoir plus</MDBBtn>
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
               <MDBCol md="4">
                 <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(45).jpg" />
+                  <MDBCardImage className="img-fluid" src={require('../image/voyage/golden-gate-bridge-731207_1920.jpg')} />
                   <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    <MDBCardTitle>San Francisco (Etat-Unis)</MDBCardTitle>
+                    <MDBCardText className="text-justify">
+                      Connu pour son pont le plus emblématiqur d'amérique de nord le Golden Gate long de 2 Km, San Fransisco est une ville où il fait bon vivre.
                     </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
+                    <MDBBtn color="primary">En savoir plus</MDBBtn>
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
               <MDBCol md="4">
                 <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(41).jpg" />
+                  <MDBCardImage className="img-fluid" src={require('../image/voyage/nazare-4317252_1920.jpg')} />
                   <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    <MDBCardTitle>Nazaré (Portugal)</MDBCardTitle>
+                    <MDBCardText className="text-justify">
+                      Nazaré au Portugal est là où on trouve les vagues les hautes du monde, 
+                      mais aussi des bons petits plâts base de poissons.
                     </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
+                    <MDBBtn color="primary">En savoir plus</MDBBtn>
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
             </MDBCarouselItem>
+            
           </MDBRow>
         </MDBCarouselInner>
       </MDBCarousel>

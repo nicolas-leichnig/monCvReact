@@ -10,37 +10,34 @@ const TimelinePage = () => {
     <hr/>
     <MDBCol md="10" id="timeLine">
     <MDBTimeline>
-      <MDBTimelineStep colorful hoverable color="cyan" label="2004">
+      <MDBTimelineStep colorful hoverable color="cyan" label="2020">
         <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(135).jpg" className="img-fluid" alt="" />
         <h4 className="font-weight-bold p-4 mb-0">
-          Ut enim ad minim veniam
+          Stage développeur Web.
         </h4>
         <p className="text-muted px-4 mb-0">
-          <MDBIcon icon="clock" /> 2017
+          <MDBIcon icon="clock" /> Novembre 2019 à mars 2020.
         </p>
-        <p className="mb-0 p-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
+        <p className="mb-0 p-4 text-justify">
+          J'ai effectué mon stage de fin d'étude dans la société INSY2S situé à Lille. 
+          J'ai pu découvrir le fontionnement du entreprise spécialisé en autre dans le développement
+          d'applications Web. Qui utilise des méthodes "Scrum" ou "Agile" et des languages de programation récent
+          comme React.Js. Intégré directement au projet professionnel en cours , j'ai pu y apporter ma contribution en réalisant
+          partie Front-End comme Back-End.
         </p>
       </MDBTimelineStep>
-      <MDBTimelineStep colorful inverted hoverable color="cyan" label="2">
+      <MDBTimelineStep colorful inverted hoverable color="cyan" label="2018">
         <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" className="img-fluid" alt="" />
         <h4 className="font-weight-bold p-4 mb-0">
-          Duis aute irure dolor
+          Responsable de rayon.
         </h4>
         <p className="text-muted px-4 mb-0">
-          <MDBIcon icon="clock" /> 2016
+          <MDBIcon icon="clock" /> Novembre 2013 à janvier 2018.
         </p>
-        <p className="mb-0 p-4">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-          quae ab illo inventore veritatis et quasi architecto beatae
-          vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-          voluptas sit aspernatur aut odit aut fugit, sed quia
-          consequuntur magni dolores eos qui ratione voluptatem sequi
-          nesciunt.
+        <p className="mb-0 p-4 text-justify">
+          En contrat avec la société Expansion 5 qui fournie des conseillés clientèles
+          et responsable de rayon. J'ai été missionné pour occupé le poste de responsable
+           de rayon dans l'Espace Culturel du Leclerc de Pont Sainte Maxence.
         </p>
       </MDBTimelineStep>
       <MDBTimelineStep colorful hoverable color="cyan" label="3">
@@ -51,7 +48,7 @@ const TimelinePage = () => {
         <p className="text-muted px-4 mb-0">
           <MDBIcon icon="clock" /> 2015
         </p>
-        <p className="mb-0 p-4">
+        <p className="mb-0 p-4 text-justify">
           Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
           consectetur, adipisci velit, sed quia non numquam eius modi
           tempora incidunt ut labore et dolore magnam aliquam quaerat
@@ -71,7 +68,7 @@ const TimelinePage = () => {
         <p className="text-muted px-4 mb-0">
           <MDBIcon icon="clock" /> 2014
         </p>
-        <p className="mb-0 p-4">
+        <p className="mb-0 p-4 text-justify">
           At vero eos et accusamus et iusto odio dignissimos ducimus qui
           blanditiis praesentium voluptatum deleniti atque corrupti quos
           dolores et quas molestias excepturi sint occaecati cupiditate
@@ -88,7 +85,7 @@ const TimelinePage = () => {
         <p className="text-muted px-4 mb-0">
           <MDBIcon icon="clock" /> 2013
         </p>
-        <p className="mb-0 p-4">
+        <p className="mb-0 p-4 text-justify">
           Temporibus autem quibusdam et aut officiis debitis aut rerum
           necessitatibus saepe eveniet ut et voluptates repudiandae sint
           et molestiae non recusandae. Itaque earum rerum hic tenetur a

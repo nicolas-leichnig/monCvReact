@@ -17,10 +17,8 @@ const Contact = () => {
                   </h1>
                   <hr className="hr-dark" />
                   <h5 className="mb-4 text-justify">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Rem repellendus quasi fuga nesciunt dolorum nulla magnam
-                    veniam sapiente, fugiat! Commodi sequi non animi ea dolor
-                    molestiae, quisquam iste, maiores. Nulla.
+                  Je suis manager avec 5 ans d’expérience dans le commerce. Tout juste diplômé d’un titre professionnel Développeur Web et Web mobile niveau 3, 
+                  dans le cadre d’une réorientation de carrière, je suis désireux de faire mes preuves.
                   </h5>
                   <hr className="hr-dark" />
                   <MDBContainer className="mt-4">
