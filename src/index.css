@@ -12,6 +12,10 @@ height: 85px;
   margin: auto;
 }
 
+#cardEx {
+height: 175px;
+}
+
 /* Formation */
 #form {
   margin-top: 75px;

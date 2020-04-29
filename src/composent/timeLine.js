@@ -38,15 +38,19 @@ const TimelinePage = () => {
           En contrat avec la société Expansion 5 qui fournie des conseillés clientèles
           et responsable de rayon. J'ai été missionné pour occupé le poste de responsable
            de rayon dans l'Espace Culturel du Leclerc de Pont Sainte Maxence.
+           J'avais la responsabilité de 2 à 3 personnes ainsi que des rayons télévision
+           , HIFI, multimédia dans l'espace culturel et les rayons petits et gros électroménager 
+           dans la grande surface. Les commandes , gestion des stocks, des marges, des plannings, du recrutement
+           n'ont plus de secret pour moi.
         </p>
       </MDBTimelineStep>
-      <MDBTimelineStep colorful hoverable color="cyan" label="3">
+      <MDBTimelineStep colorful hoverable color="cyan" label="2012">
         <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(131).jpg" className="img-fluid" alt="" />
         <h4 className="font-weight-bold p-4 mb-0">
-          Sed ut nihil unde omnis
+          Conseiller Clientèles.
         </h4>
         <p className="text-muted px-4 mb-0">
-          <MDBIcon icon="clock" /> 2015
+          <MDBIcon icon="clock" /> Septembre 2010 à juin 2012
         </p>
         <p className="mb-0 p-4 text-justify">
           Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
@@ -60,13 +64,13 @@ const TimelinePage = () => {
           voluptas nulla pariatur?
         </p>
       </MDBTimelineStep>
-      <MDBTimelineStep colorful inverted hoverable color="cyan" label="4">
+      <MDBTimelineStep colorful inverted hoverable color="cyan" label="2009">
         <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(125).jpg" className="img-fluid" alt="" />
         <h4 className="font-weight-bold p-4 mb-0">
-          Quis autem vel eum voluptate
+          Facteur.
         </h4>
         <p className="text-muted px-4 mb-0">
-          <MDBIcon icon="clock" /> 2014
+          <MDBIcon icon="clock" /> Janvier à septembre 2009
         </p>
         <p className="mb-0 p-4 text-justify">
           At vero eos et accusamus et iusto odio dignissimos ducimus qui
@@ -77,13 +81,62 @@ const TimelinePage = () => {
           rerum facilis est et expedita distinctio.
         </p>
       </MDBTimelineStep>
-      <MDBTimelineStep colorful hoverable color="cyan" label="5">
+      <MDBTimelineStep colorful hoverable color="cyan" label="2008">
         <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(144).jpg" className="img-fluid" alt="" />
         <h4 className="font-weight-bold p-4 mb-0">
-          Mussum ipsum cacilds
+          Agent de fabrication.
         </h4>
         <p className="text-muted px-4 mb-0">
-          <MDBIcon icon="clock" /> 2013
+          <MDBIcon icon="clock" /> Janvier à septembre 2008
+        </p>
+        <p className="mb-0 p-4 text-justify">
+          Temporibus autem quibusdam et aut officiis debitis aut rerum
+          necessitatibus saepe eveniet ut et voluptates repudiandae sint
+          et molestiae non recusandae. Itaque earum rerum hic tenetur a
+          sapiente delectus, ut aut reiciendis voluptatibus maiores alias
+          consequatur aut perferendis doloribus asperiores repellat.
+        </p>
+      </MDBTimelineStep>
+      <MDBTimelineStep colorful hoverable color="cyan" label="2008">
+        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(144).jpg" className="img-fluid" alt="" />
+        <h4 className="font-weight-bold p-4 mb-0">
+          Agent de Conditionnement.
+        </h4>
+        <p className="text-muted px-4 mb-0">
+          <MDBIcon icon="clock" /> Octobre à décembre 2008
+        </p>
+        <p className="mb-0 p-4 text-justify">
+          Temporibus autem quibusdam et aut officiis debitis aut rerum
+          necessitatibus saepe eveniet ut et voluptates repudiandae sint
+          et molestiae non recusandae. Itaque earum rerum hic tenetur a
+          sapiente delectus, ut aut reiciendis voluptatibus maiores alias
+          consequatur aut perferendis doloribus asperiores repellat.
+        </p>
+      </MDBTimelineStep>
+      
+      <MDBTimelineStep colorful inverted hoverable color="cyan" label="2007">
+        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(144).jpg" className="img-fluid" alt="" />
+        <h4 className="font-weight-bold p-4 mb-0">
+          Conseiller clientèles / Animateur.
+        </h4>
+        <p className="text-muted px-4 mb-0">
+          <MDBIcon icon="clock" /> Février à octobre 2007
+        </p>
+        <p className="mb-0 p-4 text-justify">
+          Temporibus autem quibusdam et aut officiis debitis aut rerum
+          necessitatibus saepe eveniet ut et voluptates repudiandae sint
+          et molestiae non recusandae. Itaque earum rerum hic tenetur a
+          sapiente delectus, ut aut reiciendis voluptatibus maiores alias
+          consequatur aut perferendis doloribus asperiores repellat.
+        </p>
+      </MDBTimelineStep>
+      <MDBTimelineStep colorful hoverable color="cyan" label="2006">
+        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(144).jpg" className="img-fluid" alt="" />
+        <h4 className="font-weight-bold p-4 mb-0">
+          Equiper polyvalent.
+        </h4>
+        <p className="text-muted px-4 mb-0">
+          <MDBIcon icon="clock" /> Février à septembre 2006
         </p>
         <p className="mb-0 p-4 text-justify">
           Temporibus autem quibusdam et aut officiis debitis aut rerum
