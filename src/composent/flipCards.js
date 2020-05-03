@@ -32,7 +32,7 @@ const MultiCarouselPage = () => {
                   <MDBCardBody>
                     <MDBCardTitle>Djerba (Tunisie)</MDBCardTitle>
                     <MDBCardText className="text-justify">
-                      Toujous baigné de soleil, Djerba possède des plages superbes
+                      Toujours baigné de soleil, Djerba possède des plages superbes
                       avec une eau d'un bleu turquoise.
                     </MDBCardText>
                     <MDBBtn color="primary">En savoir plus</MDBBtn>
@@ -45,8 +45,8 @@ const MultiCarouselPage = () => {
                   <MDBCardBody>
                     <MDBCardTitle>Barcelone (Espagne)</MDBCardTitle>
                     <MDBCardText className="text-justify">
-                      Barcelone posséde un club de foot mythique avec un stage de plus de 80 000 places,
-                      et sa gastromie vont vous réveillez les papilles.
+                      Barcelone posséde un club de foot mythique avec un stade de plus de 80 000 places,
+                      et sa gastromie vont vous réveiller les papilles.
                     </MDBCardText>
                     <MDBBtn color="primary">En savoir plus</MDBBtn>
                   </MDBCardBody>
@@ -60,8 +60,8 @@ const MultiCarouselPage = () => {
                   <MDBCardBody>
                     <MDBCardTitle>L'île de la Réunion</MDBCardTitle>
                     <MDBCardText className="text-justify">
-                      La Réunion est magique t'en par ça divesité de paysage
-                      que de culture et possède un climat de rêve.
+                      La Réunion est magique tant par sa diversité de paysage
+                      que de sa culture et possède un climat de rêve.
                     </MDBCardText>
                     <MDBBtn color="primary">En savoir plus</MDBBtn>
                   </MDBCardBody>
@@ -73,7 +73,7 @@ const MultiCarouselPage = () => {
                   <MDBCardBody>
                     <MDBCardTitle>Phuket (Thaïlande)</MDBCardTitle>
                     <MDBCardText className="text-justify">
-                      Ville touristique qui sais laisser la place au tradition,
+                      Ville touristique qui sait laisser la place aux traditions,
                       un combat de muay thai et un plat épicé, il n'y a rien de plus local.
                     </MDBCardText>
                     <MDBBtn color="primary">En savoir plus</MDBBtn>
@@ -86,8 +86,8 @@ const MultiCarouselPage = () => {
                   <MDBCardBody>
                     <MDBCardTitle>Los Angeles (Etat-Unis)</MDBCardTitle>
                     <MDBCardText className="text-justify">
-                      Holliwood, Santa Monica, Malibu autant de lieux mithyque à visité dans cette 
-                      ville imence qui ne dort jamais.
+                      Hollywood, Santa Monica, Malibu autant des lieux mithyques à visiter dans cette 
+                      ville immense qui ne dort jamais.
                     </MDBCardText>
                     <MDBBtn color="primary">En savoir plus</MDBBtn>
                   </MDBCardBody>
@@ -113,7 +113,7 @@ const MultiCarouselPage = () => {
                   <MDBCardBody>
                     <MDBCardTitle>San Francisco (Etat-Unis)</MDBCardTitle>
                     <MDBCardText className="text-justify">
-                      Connu pour son pont le plus emblématiqur d'amérique de nord le Golden Gate long de 2 Km, San Fransisco est une ville où il fait bon vivre.
+                      Connu pour son pont le plus emblématique d'Amérique du Nord le Golden Gate long de 2 Km, San Fransisco est une ville où il fait bon vivre.
                     </MDBCardText>
                     <MDBBtn color="primary">En savoir plus</MDBBtn>
                   </MDBCardBody>
@@ -125,8 +125,8 @@ const MultiCarouselPage = () => {
                   <MDBCardBody>
                     <MDBCardTitle>Nazaré (Portugal)</MDBCardTitle>
                     <MDBCardText className="text-justify">
-                      Nazaré au Portugal est là où on trouve les vagues les hautes du monde, 
-                      mais aussi des bons petits plâts base de poissons.
+                      Nazaré au Portugal est là où l'on trouve les vagues les plus hautes du monde, 
+                      mais aussi des bons petits plâts à base de poisson.
                     </MDBCardText>
                     <MDBBtn color="primary">En savoir plus</MDBBtn>
                   </MDBCardBody>

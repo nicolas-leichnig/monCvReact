@@ -13,7 +13,7 @@ height: 85px;
 }
 
 #cardEx {
-height: 175px;
+height: 75px;
 }
 
 /* Formation */
@@ -51,6 +51,11 @@ height: 175px;
 /* Time Line*/
 #timeLine {
   margin: auto;
+}
+
+#imgTime {
+  height: 275px ;
+  width: 600px ;
 }
 
 /*backGround animation*/

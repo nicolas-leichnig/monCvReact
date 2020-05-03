@@ -17,8 +17,8 @@ const Contact = () => {
                   </h1>
                   <hr className="hr-dark" />
                   <h5 className="mb-4 text-justify">
-                  Je suis manager avec 5 ans d’expérience dans le commerce. Tout juste diplômé d’un titre professionnel Développeur Web et Web mobile niveau 3, 
-                  dans le cadre d’une réorientation de carrière, je suis désireux de faire mes preuves.
+                  Je suis manager avec 5 ans d’expérience dans le commerce. Tout juste diplômé d’un titre professionnel Développeur Web et Web mobile niveau 5 (BTS / DUT), 
+                  dans le cadre d’une réorientation de carrière, je recherche mon futur employeur .
                   </h5>
                   <hr className="hr-dark" />
                   <MDBContainer className="mt-4">

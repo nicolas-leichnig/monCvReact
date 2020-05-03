@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFlippingCard,
-  MDBRow, MDBTabPane, MDBTabContent, MDBIcon,MDBAnimation,MDBCard,MDBCardBody,MDBCardText,MDBCol } from "mdbreact";
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse,
+ MDBTabPane, MDBTabContent, MDBIcon } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
-import MultiCarouselPage from "../src/composent/flipCards";
-import TimelinePage from "../src/composent/timeLine";
-import CardExample from "../src/composent/cards";
-import Contact from "../src/composent/Contact";
-import Formation from "../src/composent/formation";
-import "./index.css";
+import MultiCarouselPage from "./flipCards";
+import TimelinePage from "./timeLine";
+import CardExample from "./cards";
+import Contact from "./Contact";
+import Formation from "./formation";
+import "../index.css";
 
 class NavbarPage extends Component {
   state = {
@@ -83,12 +83,11 @@ render() {
             </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
-          <MDBNavItem  active>
-                    <MDBNavLink to="#!" active={this.state.items["default"] === "1"} onClick={this.togglePills("default", "1")}>
-                      <MDBIcon className="d-none d-md-inline" icon='home' size='2x' />
-                    </MDBNavLink>
-                  </MDBNavItem>
-            
+            <MDBNavItem>
+             <MDBNavLink to="#!" active={this.state.items["default"] === "1"} onClick={this.togglePills("default", "1")}>
+                <MDBIcon className="" icon='home' size='2x' />
+              </MDBNavLink>
+            </MDBNavItem>       
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>

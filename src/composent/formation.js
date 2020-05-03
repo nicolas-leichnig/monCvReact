@@ -49,7 +49,7 @@ const Formation = () => {
               </MDBCardTitle>
               <p className="text-justify">
                 Saison 2007, obtention du	Certificat de Qualification professionnelle
-                vente, annimation et accueil au Parc Astérix de Plailly. 
+                vente, animation et accueil au Parc Astérix de Plailly. 
               </p>
               <a href="https://www.umihformation.fr/alt-cqp-certificat-de-qualification-professionnelle.php?gclid=Cj0KCQjwyur0BRDcARIsAEt86IDY0ikVD1HtL1g0KTYN-w4X72SkJQCyHjShA8sRsSSPibFdK3HZdXkaAuK6EALw_wcB">
               <MDBBtn color='deep-orange'>
@@ -75,8 +75,8 @@ const Formation = () => {
                 <strong>Comptabilité de gestion.</strong>
               </MDBCardTitle>
               <p className="text-justify">
-                En Juin 2005, obtention du Baccalauréat Comptabilité de gestion 
-                au lycée cassini de Clermont dans l'Oise.
+                En Juin 2005, obtention du Baccalauréat Comptabilité et Gestion 
+                au lycée Cassini de Clermont dans l'Oise.
               </p>
               
               <a href="https://fr.wikipedia.org/wiki/Dipl%C3%B4me_de_comptabilit%C3%A9_et_de_gestion">
