@@ -36,7 +36,7 @@ const Contact = () => {
         <MDBCard testimonial>
           <MDBCardUp className='indigo darken-4' id="haut" />
           <MDBAvatar className='mx-auto white'>
-          <img alt="Ma photo" id="pic" src={require("../image/comica1584616571639.jpg")}/>
+          <img alt="Ma photo" id="pic" src={require("../image/Expériences/IMG_20191212_213130.jpg")}/>
           </MDBAvatar>
           <MDBCardBody>
             <h4 className='card-title'>Nicolas Leichnig</h4>

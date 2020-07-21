@@ -98,7 +98,7 @@ const TimelinePage = () => {
       </MDBTimelineStep>
       
       <MDBTimelineStep colorful inverted hoverable color="cyan" label="2007">
-      <MDBIframe id="imgTime" src="https://www.youtube.com/watch?v=cJMqTrI1aTM" className="img-fluid" />
+      <img id="imgTime" src={require("../image/Expériences/header_30_ans_mobile_1.png")} className="img-fluid z-depth-1" alt="" />
         <h4 className="font-weight-bold p-4 mb-0">
           Conseiller clientèle / Animateur. (Parc Asterix)
         </h4>
